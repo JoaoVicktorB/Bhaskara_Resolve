@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bhaskara Resolve</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="content">
+        <div id="card">
+          <div id="resolver">
+            <div id="bhaskara">Bhaskara</div>
+            <div id="exemplo">
+              <div id="ver-exemplo">x² - 6x + 5 = 0</div>
+              <div id="valores">
+                <p>a = 1</p>
+                <p>b = -6</p>
+                <p>c = 5</p>
+              </div>
+            </div>
+            <div id="erro"></div>
+            <div id="preencher-valores">
+              <label class="label-valor">
+                <b>Valor de a:</b>
+                <input
+                  id="valordeA"
+                  class="input-valor"
+                  placeholder="Digite aqui o valor de a"
+                  maxlength="7"
+                  required
+                />
+              </label>
+              <label class="label-valor">
+                <b>Valor de b:</b>
+                <input
+                  id="valordeB"
+                  class="input-valor"
+                  placeholder="Digite aqui o valor de b"
+                  maxlength="7"
+                  required
+                />
+              </label>
+              <label class="label-valor">
+                <b>Valor de c:</b>
+                <input
+                  id="valordeC"
+                  class="input-valor"
+                  placeholder="Digite aqui o valor de c"
+                  maxlength="7"
+                  required
+                />
+              </label>
+            </div>
+            <div id="botao-resolver">
+              <button id="resolver-conta">Resolver</button>
+            </div>
+          </div>
+        </div>
+        <div id="resposta">
+          <div id="resultado"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

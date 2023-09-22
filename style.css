@@ -1,0 +1,1221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  background-image: linear-gradient(
+    to right bottom,
+    #000000,
+    #1f1e1e,
+    #383635,
+    #52504d,
+    #6c6c68
+  );
+}
+
+#content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.3%;
+}
+
+#card {
+  border: 2px solid gainsboro;
+  border-radius: 35px;
+  height: 91%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resolver {
+  border: 2px solid rgb(37, 137, 204);
+  border-radius: 15px;
+  height: 96%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 0.9rem;
+}
+
+#bhaskara {
+  color: gainsboro;
+  font-size: 198%;
+  font-weight: bold;
+  height: 6%;
+  width: 35%;
+  margin-top: 2.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#exemplo {
+  background-image: linear-gradient(
+    to right,
+    rgb(244, 133, 133),
+    rgb(144, 144, 245)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 140%;
+  font-weight: bold;
+  font-family: "Poppins";
+  height: 25%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+}
+
+#ver-exemplo {
+  margin-top: 4%;
+}
+
+#valores {
+  display: flex;
+  flex-direction: row;
+  margin-top: 7%;
+  gap: 4rem;
+}
+
+#erro {
+  height: 5%;
+  width: 95%;
+  color: yellow;
+  font-size: 105%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#preencher-valores {
+  height: 53%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-valor {
+  height: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.8rem;
+  gap: 0.5rem;
+}
+
+b {
+  color: gainsboro;
+  font-size: 110%;
+}
+
+.input-valor {
+  height: 45%;
+  width: 80%;
+  background: none;
+  border: 2px solid grey;
+  border-radius: 1rem;
+  padding-left: 0.6rem;
+  color: white;
+  font-size: 110%;
+}
+
+#botao-resolver {
+  height: 12%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#resolver-conta {
+  height: 60%;
+  width: 45%;
+  border: 1px solid green;
+  border-radius: 15rem;
+  font-size: 120%;
+  color: white;
+  font-weight: bold;
+  background-color: green;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+#resolver-conta:hover {
+  background-color: rgb(6, 186, 6);
+}
+
+#resposta {
+  border: 2px solid gainsboro;
+  border-radius: 35px;
+  height: 91%;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resultado {
+  height: 96%;
+  width: 97%;
+  border: 2px solid red;
+  border-radius: 15px;
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 70%;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.DeltaPositivoRaizExata,
+.DeltaNulo {
+  font-size: 300%;
+}
+
+.DeltaNegativoeRaizInteger {
+  font-size: 250%;
+}
+
+.DeltaNegativoeRaizFloat {
+  font-size: 220%;
+}
+
+.texto-DeltaPositivoRaizInexata {
+  font-size: 140%;
+}
+
+.DeltaPositivoRaizInexata {
+  font-size: 180%;
+}
+
+/* -- Media Query (Mobile First) -- */
+
+/* 280 a 300 */
+
+@media (min-width: 280px) and (max-width: 300px) {
+  #container {
+    height: 200vh;
+    width: 100.5vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resolver {
+    border: none;
+    border-radius: 15px;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #exemplo {
+    background-image: linear-gradient(
+      to right,
+      rgb(244, 133, 133),
+      rgb(144, 144, 245)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 120%;
+    font-weight: bold;
+    font-family: "Poppins";
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #valores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    gap: 2rem;
+  }
+
+  #erro {
+    height: 5%;
+    width: 95%;
+    color: yellow;
+    font-size: 95%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 96%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 140%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 140%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 120%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 105%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 125%;
+  }
+}
+
+/* 300 a 400 */
+
+@media (min-width: 300px) and (max-width: 400px) {
+  #container {
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resolver {
+    border: none;
+    border-radius: 15px;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #exemplo {
+    background-image: linear-gradient(
+      to right,
+      rgb(244, 133, 133),
+      rgb(144, 144, 245)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 160%;
+    font-weight: bold;
+    font-family: "Poppins";
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #valores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    gap: 2rem;
+  }
+
+  #erro {
+    height: 5%;
+    width: 95%;
+    color: yellow;
+    font-size: 125%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  b {
+    color: gainsboro;
+    font-size: 140%;
+  }
+
+  .input-valor {
+    height: 45%;
+    width: 80%;
+    background: none;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding-left: 0.6rem;
+    color: white;
+    font-size: 130%;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 96%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 200%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 150%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 130%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 110%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 130%;
+  }
+}
+
+/* 400 a 500 */
+
+@media (min-width: 400px) and (max-width: 500px) {
+  #container {
+    height: 200vh;
+    width: 100.5vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resolver {
+    border: none;
+    border-radius: 15px;
+    height: 98%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #bhaskara {
+    color: gainsboro;
+    font-size: 250%;
+    font-weight: bold;
+    height: 6%;
+    width: 35%;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #exemplo {
+    background-image: linear-gradient(
+      to right,
+      rgb(244, 133, 133),
+      rgb(144, 144, 245)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 160%;
+    font-weight: bold;
+    font-family: "Poppins";
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #erro {
+    height: 5%;
+    width: 95%;
+    color: yellow;
+    font-size: 135%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  b {
+    color: gainsboro;
+    font-size: 150%;
+  }
+
+  .input-valor {
+    height: 45%;
+    width: 80%;
+    background: none;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding-left: 0.6rem;
+    color: white;
+    font-size: 140%;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 96%;
+    border: none;
+    border-radius: 15px;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 200%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 180%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 145%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 120%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 135%;
+  }
+}
+
+/* -- 500 a 600 -- */
+
+@media (min-width: 500px) and (max-width: 600px) {
+  #container {
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 230%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 200%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 125%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 120%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 100%;
+  }
+}
+
+/* -- 600 a 700 -- */
+
+@media (min-width: 600px) and (max-width: 700px) {
+  #container {
+    height: 200vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resolver {
+    border: 2px solid rgb(37, 137, 204);
+    border-radius: 25px;
+    height: 95%;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 230%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 200%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 138%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 120%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 115%;
+  }
+}
+
+/* -- 700 a 800 -- */
+
+@media (min-width: 700px) and (max-width: 800px) {
+  #container {
+    height: 300vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 280%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 240%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 150%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 125%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 135%;
+  }
+}
+
+/* -- 800 a 900 -- */
+
+@media (min-width: 800px) and (max-width: 900px) {
+  #container {
+    height: 300vh;
+    width: 100vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 91%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 91%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 280%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 240%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 160%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 120%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 150%;
+  }
+}
+
+/* -- 900 a 1000 -- */
+
+@media (min-width: 900px) and (max-width: 1000px) {
+  #container {
+    height: 300vh;
+    width: 100.5vw;
+    background-color: black;
+    background-image: linear-gradient(
+      to right bottom,
+      #000000,
+      #1f1e1e,
+      #383635,
+      #52504d,
+      #6c6c68
+    );
+  }
+
+  #content {
+    height: 100%;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.3%;
+  }
+
+  #card {
+    border: 2px solid gainsboro;
+    border-radius: 35px;
+    height: 60%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resolver {
+    border: 2px solid rgb(37, 137, 204);
+    border-radius: 15px;
+    height: 96%;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #bhaskara {
+    color: gainsboro;
+    font-size: 300%;
+    font-weight: bold;
+    height: 6%;
+    width: 35%;
+    margin-top: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #exemplo {
+    background-image: linear-gradient(
+      to right,
+      rgb(244, 133, 133),
+      rgb(144, 144, 245)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 200%;
+    font-weight: bold;
+    font-family: "Poppins";
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #erro {
+    height: 5%;
+    width: 95%;
+    color: yellow;
+    font-size: 130%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  b {
+    color: gainsboro;
+    font-size: 250%;
+  }
+
+  .input-valor {
+    height: 45%;
+    width: 80%;
+    background: none;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding-left: 0.6rem;
+    color: white;
+    font-size: 200%;
+  }
+
+  #botao-resolver {
+    height: 14%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #resolver-conta {
+    height: 60%;
+    width: 45%;
+    border: 1px solid green;
+    border-radius: 15rem;
+    font-size: 230%;
+    color: white;
+    font-weight: bold;
+    background-color: green;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  #resposta {
+    border: 2px solid gainsboro;
+    border-radius: 30px;
+    height: 60%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 97%;
+    border: 2px solid red;
+    border-radius: 15px;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 280%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 250%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 190%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 140%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 150%;
+  }
+}
+
+/* -- 1000 a 1200 -- */
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #resolver {
+    border: 2px solid rgb(37, 137, 204);
+    border-radius: 25px;
+    height: 96%;
+    width: 97.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.9rem;
+  }
+
+  #exemplo {
+    background-image: linear-gradient(
+      to right,
+      rgb(244, 133, 133),
+      rgb(144, 144, 245)
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 130%;
+    font-weight: bold;
+    font-family: "Poppins";
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+  }
+
+  #valores {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7%;
+    gap: 3rem;
+  }
+
+  #resultado {
+    width: 97%;
+    height: 96%;
+    border: 2px solid red;
+    border-radius: 25px;
+    margin-top: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('background.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 70%;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  .DeltaPositivoRaizExata,
+  .DeltaNulo {
+    font-size: 230%;
+  }
+
+  .DeltaNegativoeRaizInteger {
+    font-size: 220%;
+  }
+
+  .DeltaNegativoeRaizFloat {
+    font-size: 160%;
+  }
+
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 130%;
+  }
+
+  .DeltaPositivoRaizInexata {
+    font-size: 135%;
+  }
+}
