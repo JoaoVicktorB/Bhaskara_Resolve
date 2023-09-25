@@ -53,7 +53,7 @@ button.addEventListener("click", () => {
     const verificarTamanhoDelta = delta.toString().length;
 
     if (verificarTamanhoDelta > 7) {
-      delta = delta.toFixed(5);
+      delta = delta.toFixed(5).slice(0, 7);
     }
 
     let x1 = (-valordeB + Math.sqrt(delta)) / (2 * valordeA);
@@ -84,9 +84,26 @@ button.addEventListener("click", () => {
 
     const tamanhoEliminarParenteses = eliminarParenteses.toString().length;
     const tamanhoDuasVezesA = doisVezesA.toString().length;
+
     let espacos = "";
     let espacos2 = "";
     let espacos3 = "";
+
+    let comprimentox1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
+    let comprimentox1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
+    let comprimentox2emx = comprimentox1ex2 + Math.floor(comprimentox1emx / 2) - parseInt(tamanhoDuasVezesA);
+
+    for (let i = 0; i < comprimentox1ex2; i++) {
+      espacos += "&nbsp;";
+    }
+
+    for (let i = 0; i < comprimentox1emx; i++) {
+      espacos2 += "&nbsp;";
+    }
+
+    for (let i = 0; i < comprimentox2emx; i++) {
+      espacos3 += "&nbsp;";
+    }
 
     function DeltaPositivoRaizExata() {
       const parteDelta = `<span class="DeltaPositivoRaizExata" style="color: rgb(3, 242, 255);">Δ = ${delta}</span><br>`;
@@ -94,8 +111,7 @@ button.addEventListener("click", () => {
       const parteRaizSubtracao = `<br><span class="DeltaPositivoRaizExata" style="color: rgb(255, 158, 242);">x² = ${x2}</span><br>`;
       const parteRaizesFinais = `<br><span class="DeltaPositivoRaizExata" style="color: yellow;">x = {${x1}, ${x2}}</span>`;
 
-      const resultado =
-        parteDelta + parteRaizSoma + parteRaizSubtracao + parteRaizesFinais;
+      const resultado = parteDelta + parteRaizSoma + parteRaizSubtracao + parteRaizesFinais;
       exibirResultado(resultado);
     }
 
@@ -109,22 +125,6 @@ button.addEventListener("click", () => {
     }
 
     function DeltaNegativoeRaizInteger() {
-      let digitosx1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-      let digitosx1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-      let digitosx2emx = digitosx1ex2 + Math.floor(digitosx1emx / 2) - parseInt(tamanhoDuasVezesA);
-
-      for (let i = 0; i < digitosx1ex2; i++) {
-        espacos += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx1emx; i++) {
-        espacos2 += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx2emx; i++) {
-        espacos3 += "&nbsp;";
-      }
-
       const parteDelta = `<span class="DeltaNegativoeRaizInteger" style="color: rgb(3, 255, 24); border: 1px solid; padding: 0.2rem 1rem;">Δ = ${delta}</span><br>`;
 
       const x1Iguala = `<span>x¹ = </span>`;
@@ -163,36 +163,16 @@ button.addEventListener("click", () => {
     }
 
     function DeltaNegativoeRaizFloat() {
-      let digitosx1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-      let digitosx1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-      let digitosx2emx = digitosx1ex2 + Math.floor(digitosx1emx / 2) - parseInt(tamanhoDuasVezesA);
-
-      for (let i = 0; i < digitosx1ex2; i++) {
-        espacos += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx1emx; i++) {
-        espacos2 += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx2emx; i++) {
-        espacos3 += "&nbsp;";
-      }
-
       const parteDelta = `<span class="DeltaNegativoeRaizFloat" style="color: rgb(3, 255, 24); border: 1px solid; padding: 0.2rem 1rem;">Δ = ${delta}</span><br>`;
 
       const x1Iguala = `<span>x¹ = </span>`;
-      const parteSuperior1 = `<span style="text-decoration: underline;">${eliminarParenteses} + i√${
-        delta * -1
-      }</span><br>`;
+      const parteSuperior1 = `<span style="text-decoration: underline;">${eliminarParenteses} + i√${delta * -1}</span><br>`;
       const parteInferior1 = `<span">${espacos} ${doisVezesA}</span>`;
       const parteRaizSoma = x1Iguala + parteSuperior1 + parteInferior1;
       const x1Final = `<br><span class="DeltaNegativoeRaizFloat" style="color: rgb(3, 242, 255);">${parteRaizSoma}</span><br>`;
 
       const x2Iguala = `<span>x² = </span>`;
-      const parteSuperior2 = `<span style="text-decoration: underline;">${eliminarParenteses} - i√${
-        delta * -1
-      }</span><br>`;
+      const parteSuperior2 = `<span style="text-decoration: underline;">${eliminarParenteses} - i√${delta * -1}</span><br>`;
       const parteInferior2 = `<span>${espacos} ${doisVezesA}</span>`;
       const parteRaizSubtracao = x2Iguala + parteSuperior2 + parteInferior2;
       const x2Final = `<br><span class="DeltaNegativoeRaizFloat" style="color: rgb(255, 158, 242);">${parteRaizSubtracao}</span><br>`;
@@ -221,21 +201,9 @@ button.addEventListener("click", () => {
     }
 
     function DeltaPositivoRaizInexata() {
-      let digitosx1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta + 1 - parseInt(tamanhoDuasVezesA);
-      let digitosx1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta + 1 - parseInt(tamanhoDuasVezesA);
-      let digitosx2emx = digitosx1ex2 + Math.floor(digitosx1emx / 2) - parseInt(tamanhoDuasVezesA);
-
-      for (let i = 0; i < digitosx1ex2; i++) {
-        espacos += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx1emx; i++) {
-        espacos2 += "&nbsp;";
-      }
-
-      for (let i = 0; i < digitosx2emx; i++) {
-        espacos3 += "&nbsp;";
-      }
+      espacos += "&nbsp;";
+      espacos2 += "&nbsp;";
+      espacos3 += "&nbsp;";
 
       const resultadoExato = `<span class="texto-DeltaPositivoRaizInexata" style="color: gainsboro;">Para um resultado exato:</span><br>`;
 
