@@ -300,6 +300,17 @@ b {
     justify-content: center;
   }
 
+  .input-valor {
+    height: 45%;
+    width: 85%;
+    background: none;
+    border: 2px solid grey;
+    border-radius: 1rem;
+    padding-left: 0.6rem;
+    color: white;
+    font-size: 100%;
+  }
+
   #resposta {
     border: 2px solid gainsboro;
     border-radius: 30px;
@@ -330,23 +341,23 @@ b {
 
   .DeltaPositivoRaizExata,
   .DeltaNulo {
-    font-size: 130%;
+    font-size: 140%;
   }
 
   .DeltaNegativoeRaizInteger {
-    font-size: 110%;
+    font-size: 140%;
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 70%;
+    font-size: 120%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 85%;
+    font-size: 105%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 68%;
+    font-size: 125%;
   }
 }
 
@@ -409,7 +420,7 @@ b {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 120%;
+    font-size: 140%;
     font-weight: bold;
     font-family: "Poppins";
     height: 25%;
@@ -445,13 +456,13 @@ b {
 
   .input-valor {
     height: 45%;
-    width: 80%;
+    width: 85%;
     background: none;
     border: 2px solid grey;
     border-radius: 1rem;
     padding-left: 0.6rem;
     color: white;
-    font-size: 130%;
+    font-size: 110%;
   }
 
   #resposta {
@@ -484,23 +495,23 @@ b {
 
   .DeltaPositivoRaizExata,
   .DeltaNulo {
-    font-size: 150%;
+    font-size: 200%;
   }
 
   .DeltaNegativoeRaizInteger {
-    font-size: 120%;
+    font-size: 150%;
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 75%;
+    font-size: 130%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 80%;
+    font-size: 110%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 70%;
+    font-size: 130%;
   }
 }
 
@@ -591,7 +602,7 @@ b {
     height: 5%;
     width: 95%;
     color: yellow;
-    font-size: 135%;
+    font-size: 110%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -604,13 +615,13 @@ b {
 
   .input-valor {
     height: 45%;
-    width: 80%;
+    width: 85%;
     background: none;
     border: 2px solid grey;
     border-radius: 1rem;
     padding-left: 0.6rem;
     color: white;
-    font-size: 140%;
+    font-size: 120%;
   }
 
   #resposta {
@@ -643,23 +654,23 @@ b {
 
   .DeltaPositivoRaizExata,
   .DeltaNulo {
-    font-size: 170%;
+    font-size: 200%;
   }
 
   .DeltaNegativoeRaizInteger {
-    font-size: 140%;
+    font-size: 180%;
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 95%;
+    font-size: 145%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 100%;
+    font-size: 120%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 98%;
+    font-size: 135%;
   }
 }
 
@@ -667,7 +678,7 @@ b {
 
 @media (min-width: 500px) and (max-width: 600px) {
   #container {
-    height: 300vh;
+    height: 200vh;
     width: 100vw;
     background-color: black;
     background-image: linear-gradient(
@@ -695,90 +706,11 @@ b {
   #card {
     border: 2px solid gainsboro;
     border-radius: 35px;
-    height: 71%;
+    height: 91%;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #resolver {
-    border: 2px solid rgb(37, 137, 204);
-    border-radius: 25px;
-    height: 97%;
-    width: 97.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0.9rem;
-  }
-
-  #exemplo {
-    background-image: linear-gradient(
-      to right,
-      rgb(244, 133, 133),
-      rgb(144, 144, 245)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 170%;
-    font-weight: bold;
-    font-family: "Poppins";
-    height: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-  }
-
-  #erro {
-    height: 3%;
-    width: 95%;
-    color: yellow;
-    font-size: 110%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  b {
-    color: gainsboro;
-    font-size: 130%;
-  }
-
-  .input-valor {
-    height: 40%;
-    width: 80%;
-    background: none;
-    border: 2px solid grey;
-    border-radius: 1rem;
-    padding-left: 0.6rem;
-    color: white;
-    font-size: 120%;
-  }
-
-  #botao-resolver {
-    height: 14%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #resolver-conta {
-    height: 40%;
-    width: 45%;
-    border: 1px solid green;
-    border-radius: 15rem;
-    font-size: 150%;
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    cursor: pointer;
-    transition: 0.7s;
   }
 
   #resposta {
@@ -789,24 +721,6 @@ b {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #resultado {
-    width: 97%;
-    height: 97.5%;
-    border: 2px solid red;
-    border-radius: 15px;
-    margin-top: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70%;
-    font-style: italic;
-    font-weight: bold;
   }
 
   .DeltaPositivoRaizExata,
@@ -827,7 +741,7 @@ b {
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 125%;
+    font-size: 100%;
   }
 }
 
@@ -835,7 +749,7 @@ b {
 
 @media (min-width: 600px) and (max-width: 700px) {
   #container {
-    height: 300vh;
+    height: 200vh;
     width: 100vw;
     background-color: black;
     background-image: linear-gradient(
@@ -863,7 +777,7 @@ b {
   #card {
     border: 2px solid gainsboro;
     border-radius: 35px;
-    height: 86%;
+    height: 91%;
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -873,80 +787,12 @@ b {
   #resolver {
     border: 2px solid rgb(37, 137, 204);
     border-radius: 25px;
-    height: 97%;
+    height: 95%;
     width: 97.5%;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0.9rem;
-  }
-
-  #exemplo {
-    background-image: linear-gradient(
-      to right,
-      rgb(244, 133, 133),
-      rgb(144, 144, 245)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 200%;
-    font-weight: bold;
-    font-family: "Poppins";
-    height: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-  }
-
-  #erro {
-    height: 5%;
-    width: 95%;
-    color: yellow;
-    font-size: 120%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  b {
-    color: gainsboro;
-    font-size: 150%;
-  }
-
-  .input-valor {
-    height: 40%;
-    width: 80%;
-    background: none;
-    border: 2px solid grey;
-    border-radius: 1rem;
-    padding-left: 0.6rem;
-    color: white;
-    font-size: 130%;
-  }
-
-  #botao-resolver {
-    height: 14%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #resolver-conta {
-    height: 40%;
-    width: 45%;
-    border: 1px solid green;
-    border-radius: 15rem;
-    font-size: 150%;
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    cursor: pointer;
-    transition: 0.7s;
   }
 
   #resposta {
@@ -959,24 +805,6 @@ b {
     align-items: center;
   }
 
-  #resultado {
-    width: 97%;
-    height: 97%;
-    border: 2px solid red;
-    border-radius: 15px;
-    margin-top: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70%;
-    font-style: italic;
-    font-weight: bold;
-  }
-
   .DeltaPositivoRaizExata,
   .DeltaNulo {
     font-size: 230%;
@@ -987,15 +815,15 @@ b {
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 145%;
+    font-size: 138%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 130%;
+    font-size: 120%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 145%;
+    font-size: 115%;
   }
 }
 
@@ -1038,85 +866,6 @@ b {
     align-items: center;
   }
 
-  #resolver {
-    border: 2px solid rgb(37, 137, 204);
-    border-radius: 15px;
-    height: 97%;
-    width: 97.5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0.9rem;
-  }
-
-  #exemplo {
-    background-image: linear-gradient(
-      to right,
-      rgb(244, 133, 133),
-      rgb(144, 144, 245)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 180%;
-    font-weight: bold;
-    font-family: "Poppins";
-    height: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-  }
-
-  #erro {
-    height: 5%;
-    width: 95%;
-    color: yellow;
-    font-size: 120%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  b {
-    color: gainsboro;
-    font-size: 150%;
-  }
-
-  .input-valor {
-    height: 40%;
-    width: 80%;
-    background: none;
-    border: 2px solid grey;
-    border-radius: 1rem;
-    padding-left: 0.6rem;
-    color: white;
-    font-size: 130%;
-  }
-
-  #botao-resolver {
-    height: 14%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #resolver-conta {
-    height: 40%;
-    width: 45%;
-    border: 1px solid green;
-    border-radius: 15rem;
-    font-size: 150%;
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    cursor: pointer;
-    transition: 0.7s;
-  }
-
   #resposta {
     border: 2px solid gainsboro;
     border-radius: 30px;
@@ -1125,24 +874,6 @@ b {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #resultado {
-    width: 97%;
-    height: 97%;
-    border: 2px solid red;
-    border-radius: 15px;
-    margin-top: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70%;
-    font-style: italic;
-    font-weight: bold;
   }
 
   .DeltaPositivoRaizExata,
@@ -1155,15 +886,15 @@ b {
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 160%;
-  }
-
-  .texto-DeltaPositivoRaizInexata {
     font-size: 150%;
   }
 
+  .texto-DeltaPositivoRaizInexata {
+    font-size: 125%;
+  }
+
   .DeltaPositivoRaizInexata {
-    font-size: 170%;
+    font-size: 135%;
   }
 }
 
@@ -1206,74 +937,6 @@ b {
     align-items: center;
   }
 
-  #exemplo {
-    background-image: linear-gradient(
-      to right,
-      rgb(244, 133, 133),
-      rgb(144, 144, 245)
-    );
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 180%;
-    font-weight: bold;
-    font-family: "Poppins";
-    height: 20%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-  }
-
-  #erro {
-    height: 5%;
-    width: 95%;
-    color: yellow;
-    font-size: 120%;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-  b {
-    color: gainsboro;
-    font-size: 150%;
-  }
-
-  .input-valor {
-    height: 40%;
-    width: 80%;
-    background: none;
-    border: 2px solid grey;
-    border-radius: 1rem;
-    padding-left: 0.6rem;
-    color: white;
-    font-size: 130%;
-  }
-
-  #botao-resolver {
-    height: 14%;
-    width: 80%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  #resolver-conta {
-    height: 40%;
-    width: 45%;
-    border: 1px solid green;
-    border-radius: 15rem;
-    font-size: 150%;
-    color: white;
-    font-weight: bold;
-    background-color: green;
-    cursor: pointer;
-    transition: 0.7s;
-  }
-
   #resposta {
     border: 2px solid gainsboro;
     border-radius: 30px;
@@ -1282,24 +945,6 @@ b {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-
-  #resultado {
-    width: 97%;
-    height: 97%;
-    border: 2px solid red;
-    border-radius: 15px;
-    margin-top: 0.9rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: url(background.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 70%;
-    font-style: italic;
-    font-weight: bold;
   }
 
   .DeltaPositivoRaizExata,
@@ -1312,15 +957,15 @@ b {
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 190%;
+    font-size: 160%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 150%;
+    font-size: 120%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 185%;
+    font-size: 150%;
   }
 }
 
@@ -1328,7 +973,7 @@ b {
 
 @media (min-width: 900px) and (max-width: 1000px) {
   #container {
-    height: 280vh;
+    height: 300vh;
     width: 100.5vw;
     background-color: black;
     background-image: linear-gradient(
@@ -1344,6 +989,8 @@ b {
   #content {
     height: 100%;
     width: 100%;
+    padding-top: 5%;
+    padding-bottom: 4%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1354,8 +1001,8 @@ b {
   #card {
     border: 2px solid gainsboro;
     border-radius: 35px;
-    height: 50%;
-    width: 75%;
+    height: 60%;
+    width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1393,10 +1040,10 @@ b {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 180%;
+    font-size: 200%;
     font-weight: bold;
     font-family: "Poppins";
-    height: 20%;
+    height: 25%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1409,7 +1056,7 @@ b {
     height: 5%;
     width: 95%;
     color: yellow;
-    font-size: 120%;
+    font-size: 130%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -1417,34 +1064,34 @@ b {
 
   b {
     color: gainsboro;
-    font-size: 150%;
+    font-size: 250%;
   }
 
   .input-valor {
-    height: 40%;
+    height: 45%;
     width: 80%;
     background: none;
     border: 2px solid grey;
     border-radius: 1rem;
     padding-left: 0.6rem;
     color: white;
-    font-size: 130%;
+    font-size: 200%;
   }
 
   #botao-resolver {
     height: 14%;
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   #resolver-conta {
-    height: 40%;
+    height: 60%;
     width: 45%;
     border: 1px solid green;
     border-radius: 15rem;
-    font-size: 170%;
+    font-size: 230%;
     color: white;
     font-weight: bold;
     background-color: green;
@@ -1455,7 +1102,7 @@ b {
   #resposta {
     border: 2px solid gainsboro;
     border-radius: 30px;
-    height: 40%;
+    height: 60%;
     width: 95%;
     display: flex;
     flex-direction: column;
@@ -1490,44 +1137,21 @@ b {
   }
 
   .DeltaNegativoeRaizFloat {
-    font-size: 220%;
+    font-size: 190%;
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 150%;
+    font-size: 140%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 180%;
+    font-size: 150%;
   }
 }
 
-/* -- 1001 a 1100 -- */
+/* -- 1000 a 1200 -- */
 
-@media (min-width: 1001px) and (max-width: 1100px) {
-  #content {
-    height: 100%;
-    width: 100%;
-    padding-top: 5%;
-    padding-bottom: 4%;
-    padding-left: 2%;
-    padding-right: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.3%;
-  }
-
-  #card {
-    border: 2px solid gainsboro;
-    border-radius: 35px;
-    height: 91%;
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
+@media (min-width: 1000px) and (max-width: 1200px) {
   #resolver {
     border: 2px solid rgb(37, 137, 204);
     border-radius: 25px;
@@ -1548,7 +1172,7 @@ b {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    font-size: 150%;
+    font-size: 130%;
     font-weight: bold;
     font-family: "Poppins";
     height: 25%;
@@ -1587,11 +1211,11 @@ b {
 
   .DeltaPositivoRaizExata,
   .DeltaNulo {
-    font-size: 210%;
+    font-size: 230%;
   }
 
   .DeltaNegativoeRaizInteger {
-    font-size: 200%;
+    font-size: 220%;
   }
 
   .DeltaNegativoeRaizFloat {
@@ -1599,10 +1223,10 @@ b {
   }
 
   .texto-DeltaPositivoRaizInexata {
-    font-size: 110%;
+    font-size: 130%;
   }
 
   .DeltaPositivoRaizInexata {
-    font-size: 115%;
+    font-size: 135%;
   }
 }
