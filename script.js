@@ -89,9 +89,9 @@ button.addEventListener("click", () => {
     let espacos2 = "";
     let espacos3 = "";
 
-    let comprimentox1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-    let comprimentox1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
-    let comprimentox2emx = comprimentox1ex2 + Math.floor(comprimentox1emx / 2) - parseInt(tamanhoDuasVezesA);
+    const comprimentox1ex2 = 5 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
+    const comprimentox1emx = 6 + tamanhoEliminarParenteses + 3 + verificarTamanhoDelta - parseInt(tamanhoDuasVezesA);
+    const comprimentox2emx = comprimentox1ex2 + Math.floor(comprimentox1emx / 2) - parseInt(tamanhoDuasVezesA);
 
     for (let i = 0; i < comprimentox1ex2; i++) {
       espacos += "&nbsp;";
